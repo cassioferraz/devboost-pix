@@ -1,16 +1,18 @@
 # DevBoost PIX Gateway
 
-**Gateway PIX self-hosted para PHP — integre Itaú, Santander, Sicredi e Bradesco com uma única API.**
+**Pare de perder dias integrando PIX. Entregue em horas.**
 
-> Sem mensalidade de gateway. Sem intermediário. Você controla tudo.
+> Sistema completo, self-hosted, pronto para produção — você instala, configura e já está gerando cobranças PIX reais.
 
 ---
 
-## O que é isso?
+## O problema que isso resolve
 
-O **DevBoost PIX Gateway** é um sistema completo, pronto para produção, que você instala no seu próprio servidor e usa para gerar cobranças PIX diretamente nas APIs oficiais dos bancos — sem depender de gateways de pagamento de terceiros como PagSeguro, Mercado Pago ou similares.
+Integrar PIX diretamente com os bancos é trabalhoso: OAuth2, mTLS, certificados digitais, CSR, ambientes de sandbox, formatos diferentes por banco, tratamento de erros, cache de token, renovação automática...
 
-Você recebe o código-fonte completo, com painel de administração incluso.
+Tudo isso consome dias de desenvolvimento — às vezes semanas — antes de você cobrar o primeiro centavo do cliente.
+
+O **DevBoost PIX Gateway** já tem tudo isso resolvido e testado em produção. Você recebe o código-fonte completo, instala no servidor do cliente em minutos e começa a integrar pelo endpoint REST imediatamente.
 
 ---
 
@@ -41,16 +43,28 @@ Você recebe o código-fonte completo, com painel de administração incluso.
 
 ---
 
+## O que você NÃO vai precisar implementar do zero
+
+- Fluxo OAuth2 com renovação automática de token ✅
+- mTLS com certificados digitais por banco ✅
+- Geração de TxID, QR Code e Pix Copia e Cola ✅
+- Cache de token para evitar chamadas desnecessárias ao banco ✅
+- Upload e gerenciamento de certificados digitais ✅
+- Diferenças de API entre Itaú, Santander e Sicredi ✅
+- Tratamento de erros, retentativas e logs ✅
+
+---
+
 ## O que está incluído
 
-- **Painel de Administração** (React + Tailwind) — configure credenciais, faça upload de certificados e monitore tudo via browser
-- **API PIX completa** — endpoints para gerar, consultar e cancelar cobranças
-- **Teste de conexão em tempo real** — terminal interativo que autentica com o banco e valida certificados antes de ir para produção
+- **Painel de Administração** (React + Tailwind) — configure credenciais, faça upload de certificados e monitore tudo via browser, sem mexer em arquivo de config
+- **API PIX completa** — endpoints REST para gerar, consultar e cancelar cobranças
+- **Teste de conexão em tempo real** — terminal interativo que autentica com o banco e valida certificados antes de ir para produção, sem precisar subir código de teste
 - **Documentação da API integrada** — exemplos em cURL, JavaScript e PHP prontos para copiar
-- **Guias de configuração por banco** — passo a passo para obter credenciais no portal de cada banco
+- **Guias de configuração por banco** — passo a passo para obter credenciais no portal de cada banco (Itaú, Santander, Sicredi)
 - **Histórico de transações** — consulte todas as cobranças geradas, filtradas por banco e status
-- **Docker incluso** — sobe o ambiente completo com `docker-compose up`
-- **Código-fonte 100% aberto** — sem ofuscação, sem licença de runtime, sem chamada para servidor externo
+- **Docker incluso** — sobe o ambiente completo com `docker-compose up` para desenvolver localmente
+- **Código-fonte 100% seu** — sem ofuscação, sem licença de runtime, sem dependência de servidor externo
 
 ---
 
@@ -66,7 +80,7 @@ Seu sistema  →  POST /api_pix/endpoints/gerar_pix.php
             QR Code + Copia e Cola retornados
 ```
 
-Uma única chamada HTTP com `banco_codigo`, `valor` e `descricao` — o gateway cuida de toda a autenticação OAuth2 + mTLS, geração do txid, e retorna o QR Code pronto.
+Uma única chamada HTTP com `banco_codigo`, `valor` e `descricao`. O gateway cuida de tudo: autenticação OAuth2, renovação de token, mTLS com o certificado certo, geração do txid e retorno do QR Code — sem você precisar saber como cada banco funciona por baixo.
 
 ---
 
@@ -123,10 +137,10 @@ Ou simplesmente use o **Docker incluso** — zero configuração manual.
 
 ## Para quem é
 
-✅ Desenvolvedor PHP que integra sistemas para clientes  
-✅ SaaS ou e-commerce que quer eliminar a taxa por transação  
-✅ Empresa que precisa de múltiplas contas PIX em bancos diferentes  
-✅ Quem quer ter controle total sobre o fluxo de pagamento
+✅ **Desenvolvedor PHP** que quer entregar integração PIX em horas, não em dias  
+✅ **Freelancer ou agência** que atende múltiplos clientes com contas em bancos diferentes  
+✅ **SaaS ou e-commerce** que quer eliminar a taxa por transação de gateways de terceiros  
+✅ **Empresa** que precisa de controle total sobre o fluxo de pagamento PIX
 
 ---
 
@@ -134,6 +148,14 @@ Ou simplesmente use o **Docker incluso** — zero configuração manual.
 
 Licença vitalícia — pague uma vez, use para sempre, em quantos projetos quiser.  
 Código-fonte completo entregue sem restrições de runtime ou assinatura.
+
+---
+
+## O que você ganha de verdade
+
+Não é só código. É o tempo que você **não vai gastar** lendo documentação de API de banco, depurando erro de certificado mTLS, descobrindo por que o token expirou ou entendendo por que o Sicredi tem um fluxo diferente do Itaú.
+
+Isso está resolvido. Você chega, configura as credenciais no painel, faz o upload do certificado, testa a conexão e começa a integrar.
 
 ---
 
