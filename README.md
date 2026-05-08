@@ -1,4 +1,4 @@
-# DevBoost PIX Gateway
+# API PIX PHP Gateway
 
 **Pare de perder dias integrando PIX. Entregue em horas.**
 
@@ -6,20 +6,16 @@
 
 ---
 
+## 🌐 [Site oficial](https://apipixphp.netlify.app/)
+Acesse o site oficial do produto para ver demonstrações, screenshots reais, preços e efetuar a compra.
+
+---
+
 ## 🛒 Compre agora
 
-**🔥 Testado e validado em produção. Funciona no primeiro dia.**
+Disponível em **pacotes individuais por banco** (Itaú, Santander ou Sicredi) ou no **pacote completo** com todos os bancos incluídos. Licença vitalícia, pagamento único, sem mensalidade.
 
-| Plano | Bancos incluídos | Preço | Link |
-|---|---|---|---|
-| Por banco | Itaú | R$ 249,90 | [→ Comprar Itaú](https://pay.kiwify.com.br/rMjhROH) |
-| Por banco | Santander | R$ 249,90 | [→ Comprar Santander](https://pay.kiwify.com.br/OCJyrim) |
-| Por banco | Sicredi | R$ 249,90 | [→ Comprar Sicredi](https://pay.kiwify.com.br/R6eI3Z3) |
-| **✅ Completo** | **Itaú + Santander + Sicredi** | **R$ 599,90** | [**→ Comprar Plano Completo**](https://pay.kiwify.com.br/7qtrequ) |
-
-> 💰 **Plano completo economiza R$ 149,80** vs. comprar os 3 separados · Licença vitalícia · Uso ilimitado
-
-**👉 [Ver landing page completa](https://devboost-pix.netlify.app)**
+**👉 [Ver planos e preços](https://apipixphp.netlify.app/#preco)**
 
 ---
 
@@ -29,7 +25,7 @@ Integrar PIX diretamente com os bancos é trabalhoso: OAuth2, mTLS, certificados
 
 Tudo isso consome dias de desenvolvimento — às vezes semanas — antes de você cobrar o primeiro centavo do cliente.
 
-O **DevBoost PIX Gateway** já tem tudo isso resolvido e testado em produção. Você recebe o código-fonte completo, instala no servidor do cliente em minutos e começa a integrar pelo endpoint REST imediatamente.
+O **API PIX PHP Gateway** já tem tudo isso resolvido e testado em produção. Você recebe o código-fonte completo, instala no servidor do cliente em minutos e começa a integrar pelo endpoint REST imediatamente.
 
 ---
 
@@ -176,4 +172,4 @@ Isso está resolvido. Você chega, configura as credenciais no painel, faz o upl
 
 ---
 
-*DevBoost — ferramentas para desenvolvedores que precisam de produção, não de promessa.*
+*API PIX PHP Gateway — ferramentas para desenvolvedores que precisam de produção, não de promessa.*
