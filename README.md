@@ -2,7 +2,24 @@
 
 **Pare de perder dias integrando PIX. Entregue em horas.**
 
-> Sistema completo, self-hosted, pronto para produção — você instala, configura e já está gerando cobranças PIX reais.
+> Sistema completo, self-hosted, **validado em produção** — você instala, configura e já está gerando cobranças PIX reais com Itaú, Santander e Sicredi.
+
+---
+
+## 🛒 Compre agora
+
+**🔥 Testado e validado em produção. Funciona no primeiro dia.**
+
+| Plano | Bancos incluídos | Preço | Link |
+|---|---|---|---|
+| Por banco | Itaú | R$ 249,90 | [→ Comprar Itaú](https://pay.kiwify.com.br/rMjhROH) |
+| Por banco | Santander | R$ 249,90 | [→ Comprar Santander](https://pay.kiwify.com.br/OCJyrim) |
+| Por banco | Sicredi | R$ 249,90 | [→ Comprar Sicredi](https://pay.kiwify.com.br/R6eI3Z3) |
+| **✅ Completo** | **Itaú + Santander + Sicredi** | **R$ 599,90** | [**→ Comprar Plano Completo**](https://pay.kiwify.com.br/7qtrequ) |
+
+> 💰 **Plano completo economiza R$ 149,80** vs. comprar os 3 separados · Licença vitalícia · Uso ilimitado
+
+**👉 [Ver landing page completa](https://devboost-pix.netlify.app)**
 
 ---
 
